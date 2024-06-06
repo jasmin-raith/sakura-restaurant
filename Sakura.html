@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+    <title>Sakura Ramen</title> 
+    <style>
+      body {
+        margin: 0px;
+      }
+
+      .bg1 {
+        height: 100vh;
+        min-height: 500px;
+        background-image: url("./images/bgr1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Raleway", sans-serif;
+        color: white;
+      }
+
+      .bg1 h1 {
+        font-size: 500%;
+        margin-bottom: 6px;
+      }
+
+      .menu {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        height: 50px;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .menu a {
+        text-decoration: none;
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        margin: 30px;
+      }
+
+      .tel {
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        height: 20px;
+        padding: 8px;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        background-color: #a32424;
+        border: solid;
+        border-radius: 5px;
+      }
+
+      .img {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        height: 100px;
+      }
+
+      .order {
+        
+      }
+      
+      .order1 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Raleway', sans-serif;
+        padding: 25px;
+        font-size: 200%;
+        color: #a32424;
+
+      }
+
+      .order2 {
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Economica', sans-serif;
+        padding: 60px;
+      }
+
+      .order3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .order4 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: xx-large;
+      }
+
+      .bg2 {
+        height: 1100px;
+        background-image: url(./images/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .menu1 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Raleway', sans-serif;
+        padding: 15px;
+        font-size: 200%;
+        color: #a32424;
+      }
+
+      .menu2 {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Economica', sans-serif;
+        font-size: 260%;
+      }
+
+      .menu3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+      }
+
+      .menu3_reverse {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+      }
+
+      .menu4 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      .td-width {
+        width: 230px;
+      }
+
+      .text {
+        font-family: 'Raleway', sans-serif;
+        font-size: 65%;
+        font-weight: bold;
+        color: #63605f;
+      }
+
+      .find {
+        display: flex;
+        justify-content: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 200%;
+        color: #a32424;
+      }
+
+      .adresse {
+        display: flex;
+        justify-content: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 150%;
+      }
+
+      .find-img {
+        width: 22px; 
+        height: 30px;
+        display: flex;
+        align-items: center;
+      }
+
+      .street {
+        margin-left: 30px; 
+        padding-top: 2px;
+      }
+
+      .soup {
+        width: 260px;
+        height: 260px;
+      }
+
+      .footer {
+        display: flex; 
+        justify-content: space-between;
+        margin: 20px;
+      }
+
+      @media(max-width: 600px) {
+        .hide-mobile {
+          display: none;
+        }
+
+        .bg1 h1 {
+          font-size: 250%;
+        }
+
+        h2 {
+          text-align: center;
+
+        }
+
+        .order2 {
+          flex-direction: column;
+          gap: 60px;
+        }
+
+        .menu3 {
+          flex-direction: column;
+          align-items: center;
+
+        }
+
+        .bg2 {
+          height: auto;
+        }
+
+        .menu3_reverse {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+
+        .adresse {
+          display: flex;
+          align-items: center;
+        }
+
+        .street {
+          font-size: 70%;
+          text-align: center;
+        }
+
+        .footer {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="menu">
+        <div>
+          <img src="./images/saku.png" />
+        </div>
+
+        <div style="display: flex; align-items: center">
+          <div >
+            <a class="hide-mobile" href="#">MENU</a>
+            <a class="hide-mobile" href="#">LOCATIONS</a>
+            <a class="hide-mobile" href="#">ABOUT</a>
+          </div>
+          <div>
+            <a class="tel hide-mobile" href="tel.:0176 23672345">
+              <img src="./images/phone.png" />
+              0176 23672345
+            </a>
+          </div>
+          <a href="#" onclick="german()"><img style="height: 30px;" src="./images/german-flag.svg"></a>
+          <a href="#" onclick="english()"><img style="height: 30px;" src="./images/english-flag.svg"></a>
+        </div>
+      </div>
+
+      <div class="bg1">
+        <div>
+          <h1 style="margin-top: 200px">SAKURA RAMEN</h1>
+        </div>
+
+        <div id="the-best">THE BEST RAMEN IN TOWN</div>
+      </div>
+    </div>
+
+    <div class="order">
+      <div class="order1">
+        <div>
+          <h2 id="order">HOW TO ORDER</h2>
+        </div>
+      </div>
+
+      <div class="order2">
+        <div class="order3">
+          <img src="./images/bowl_icon.jpg">
+          <span class="order4" id="noodle">
+            <b>Pick<br>
+            Your Noodle</b>
+          </span>
+        </div>
+        <div class="order3">
+          <img src="./images/broth_icon.png">
+          <span class="order4" id="broth">
+            <b>Pick<br>
+            Your Broth</b>
+          </span>
+        </div>
+        <div class="order3">
+          <img src="images/eggs_icon.jpg">
+          <span class="order4" id="toppings">
+            <b>Add Your<br>
+            Toppings</b>
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg2">
+      <div class="menu1">
+        <h2 id="menu">OUR MENU</h2>
+      </div>
+
+      <div class="menu2">
+        <div class="menu3">
+          <img class="soup" src="./images/r1.png">
+          <div>
+            <div>
+              <div class="menu4"><b>Tonkasu Ramen</b></div>
+              <table class="text">
+                <tr>
+                  <td class="td-width" id="chicken1">CHICKEN</td>
+                  <td>11.95€</td>
+                </tr>
+                <tr>
+                  <td id="beef1">BEEF</td>
+                  <td>12.95€</td>
+                </tr>
+                <tr>
+                  <td id="shrimp1">SHRIMP</td>
+                  <td>13.95€</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="menu3_reverse">
+            <div>
+              <div class="menu4"><b>Spicy Miso Ramen</b></div>
+              <table class="text">
+                <tr>
+                  <td class="td-width" id="chicken2">CHICKEN</td>
+                  <td>11.95€</td>
+                </tr>
+                <tr>
+                  <td id="beef2">BEEF</td>
+                  <td>12.95€</td>
+                </tr>
+                <tr>
+                  <td id="shrimp2">SHRIMP</td>
+                  <td>13.95€</td>
+                </tr>
+              </table>
+          </div>
+          <img class="soup" src="./images/r2.png">
+        </div>
+        <div class="menu3">
+          <img class="soup" src="./images/r3.png">
+          <div>
+            <div>
+              <div class="menu4"><b>Shio Ramen</b></div>
+              <table class="text">
+                <tr>
+                  <td class="td-width" id="chicken3">CHICKEN</td>
+                  <td>11.95€</td>
+                </tr>
+                <tr>
+                  <td id="beef3">BEEF</td>
+                  <td>12.95€</td>
+                </tr>
+                <tr>
+                  <td id="shrimp3">SHRIMP</td>
+                  <td>13.95€</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 650px">
+      <div class="find">
+        <h2 id="find">FIND US AT</h2>
+      </div>
+      <div class="adresse">
+        <div>
+         <img class="find-img" src="images/LO.png">
+        </div>
+        <div class="street">Kapuzinerstraße 31, München, BY 80337</div>
+      </div>
+      <div style="margin-top: 20px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.0707038951973!2d11.554232751187156!3d48.12815985969378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf5069fb05c9%3A0x81920e25c12ff189!2sKapuzinerstra%C3%9Fe%201%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1678979607496!5m2!1sde!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="footer">
+      <div style="margin-top: 13px;">
+        <img src="images/saklogo.png">
+      </div>
+      <div>
+       <img src="images/fb.png" style="margin-right: 30px;">
+       <img src="images/ins.png" style="margin-right: 30px;">
+       <img src="images/tripad.png" style="margin-right: 30px;">
+      </div>
+    </div>
+
+    <script>
+      function german() {
+        document.getElementById('the-best').innerHTML = 'DAS BESTE RAMEN DER STADT';
+        document.getElementById('order').innerHTML = 'WIE MAN BESTELLT';
+        document.getElementById('noodle').innerHTML = '<b>WÄHLE <br> DEINE NUDELN<b>';
+        document.getElementById('broth').innerHTML = '<b>WÄHLE <br> DEINE BRÜHE<b>';
+        document.getElementById('toppings').innerHTML = '<b>WÄHLE <br> DEINE GARNIERUNGEN<b>';
+        document.getElementById('menu').innerHTML = 'UNSER MENÜ';
+        document.getElementById('chicken1').innerHTML = 'HÜHNCHEN';
+        document.getElementById('beef1').innerHTML = 'RIND';
+        document.getElementById('shrimp1').innerHTML = 'GARNELEN';
+        document.getElementById('chicken2').innerHTML = 'HÜHNCHEN';
+        document.getElementById('beef2').innerHTML = 'RIND';
+        document.getElementById('shrimp2').innerHTML = 'GARNELEN';
+        document.getElementById('chicken3').innerHTML = 'HÜHNCHEN';
+        document.getElementById('beef3').innerHTML = 'RIND';
+        document.getElementById('shrimp3').innerHTML = 'GARNELEN';
+        document.getElementById('find').innerHTML = 'SIE FINDEN UNS HIER';
+      }
+
+      function english() {
+        document.getElementById('the-best').innerHTML = 'THE BEST RAMEN IN THE CITY';
+        document.getElementById('order').innerHTML = 'HOW YOU ORDER';
+        document.getElementById('noodle').innerHTML = '<b>CHOOSE <br> YOUR NOODLES<b>';
+        document.getElementById('broth').innerHTML = '<b>CHOOSE <br> YOUR SOUP<b>';
+        document.getElementById('toppings').innerHTML = '<b>CHOOSE <br> YOUR TOPPINGS<b>';
+        document.getElementById('menu').innerHTML = 'OUR MENU';
+        document.getElementById('chicken1').innerHTML = 'CHICKEN';
+        document.getElementById('beef1').innerHTML = 'BEEF';
+        document.getElementById('shrimp1').innerHTML = 'SHRIMP';
+        document.getElementById('chicken2').innerHTML = 'CHICKEN';
+        document.getElementById('beef2').innerHTML = 'BEEF';
+        document.getElementById('shrimp2').innerHTML = 'SHRIMP';
+        document.getElementById('chicken3').innerHTML = 'CHICKEN';
+        document.getElementById('beef3').innerHTML = 'BEEF';
+        document.getElementById('shrimp3').innerHTML = 'SHRIMP';
+        document.getElementById('find').innerHTML = 'FIND US HERE';
+      }
+
+
+    </script>
+
+  </body>
+</html>
